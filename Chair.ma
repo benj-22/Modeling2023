@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Chair.ma
-//Last modified: Mon, Aug 28, 2023 10:33:16 PM
+//Last modified: Tue, Aug 29, 2023 08:14:15 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "13E261D5-4100-5316-4919-2A876E320E48";
+fileInfo "UUID" "0949FC93-42AA-E7CA-D61F-FA88C30493BA";
 createNode transform -s -n "persp";
 	rename -uid "18089382-42C6-9269-D15E-56A42C718AE7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -6.8306667160722627 3.8298520190594445 -7.5944465264636563 ;
-	setAttr ".r" -type "double3" -15.938352729478357 931.39999999993859 0 ;
+	setAttr ".t" -type "double3" 7.3432058651340846 4.238485622616432 -6.6375940714501604 ;
+	setAttr ".r" -type "double3" -16.538352729480099 856.59999999991521 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "581D1F34-4181-6DA2-EE93-B284A9A92DC0";
 	setAttr -k off ".v" no;
@@ -309,20 +309,20 @@ createNode mesh -n "ChairMeshShape" -p "ChairMesh";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5FE1109D-4725-A984-7739-96AC69868A72";
+	rename -uid "CC3401D8-4E34-55BC-592B-B5A9CD15DF09";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "7B07F605-4767-F4E9-B7FE-2F8BCB90A6DB";
+	rename -uid "44F95BD5-40FA-1C19-2453-9EA63E30780C";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E67B35CD-4BA5-7B79-1517-5E893B599883";
+	rename -uid "D8672147-472E-EC7C-764E-87BE249BDD7D";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "3506E995-46AB-84FF-C3B2-64ACEE3E3AB6";
+	rename -uid "E9054C00-4052-F0FF-BD2A-16B8CD7F7CB4";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "FB50EF7B-445D-61A2-6B6A-61A86DA58763";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A71048FD-4ACC-74B0-6F52-74B3DB2F3C71";
+	rename -uid "EA96F549-46EF-F97A-9FAF-E9A03C2EB290";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "DDB377A1-418C-B7EE-90B4-3CA076F4054A";
 	setAttr ".g" yes;
@@ -476,8 +476,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "groupId1.id" "ChairMeshShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "ChairMeshShape.iog.og[0].gco";
 connectAttr "groupId2.id" "ChairMeshShape.iog.og[1].gid";
