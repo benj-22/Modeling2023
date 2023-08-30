@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Pen.ma
-//Last modified: Wed, Aug 30, 2023 01:03:08 PM
+//Last modified: Wed, Aug 30, 2023 01:13:12 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "9C22D5C3-4691-2738-F8FD-F7BCCD4A5569";
+fileInfo "UUID" "3AD70F3C-4F04-09A9-20C7-23A110504938";
 createNode transform -s -n "persp";
 	rename -uid "13F3992D-4376-216D-DDB0-1F961266AF7A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 23.938244567336156 9.1344229109616517 7.8663894964052989 ;
-	setAttr ".r" -type "double3" -12.338352729601176 68.600000000000662 -2.1791977579756417e-15 ;
+	setAttr ".t" -type "double3" 24.888507283547739 12.045708378711778 2.3359874216325887 ;
+	setAttr ".r" -type "double3" -20.138352729601348 83.400000000000617 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BD6B5DED-49EE-6058-D723-BEB768241B98";
 	setAttr -k off ".v" no;
