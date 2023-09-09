@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: TableRemodel.ma
-//Last modified: Fri, Sep 08, 2023 08:55:42 PM
+//Last modified: Fri, Sep 08, 2023 09:01:49 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "93456B27-474B-BA5C-EDE4-32852245583F";
+fileInfo "UUID" "483FC07B-434E-AF15-1D85-16930929312C";
 createNode transform -s -n "persp";
 	rename -uid "52300361-4FCF-AE87-DE34-BDB383628399";
 	setAttr ".v" no;
@@ -31,9 +31,8 @@ createNode camera -s -n "perspShape" -p "persp";
 createNode transform -s -n "top";
 	rename -uid "95F25758-4A39-EB36-9F58-61AE369A164D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -663.6284316874395 231.89900142655975 716.83500446806363 ;
-	setAttr ".r" -type "double3" -13.170000000000282 -42.810000000000159 1.0838692159760518e-15 ;
-	setAttr ".rpt" -type "double3" 6.2177562301322731e-14 5.9481681330676648e-15 -1.2624855971447208e-29 ;
+	setAttr ".t" -type "double3" -0.24947714805631416 4.0351431369781432 1000.4546075820923 ;
+	setAttr ".rpt" -type "double3" 6.1961919523308057e-14 6.2834024548062304e-15 -1.6859137696748875e-15 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "6C944466-4A18-F6C2-DC84-E590F964E0AA";
 	setAttr -k off ".v" no;
@@ -45,7 +44,7 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
-	setAttr ".tp" -type "double3" -0.24947710126313716 4.0351432085367378 0.35460762535433155 ;
+	setAttr ".tp" -type "double3" -0.24947714805625221 4.0351431369781494 0.35460758209228516 ;
 	setAttr ".hc" -type "string" "viewSet -t %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
