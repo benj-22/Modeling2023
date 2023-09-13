@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: ChairRemodel.ma
-//Last modified: Wed, Sep 13, 2023 12:26:36 AM
+//Name: Chair_UV.ma
+//Last modified: Wed, Sep 13, 2023 12:27:19 AM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "BCDF0BEB-4DD0-5901-F9B0-E48C2C8070D0";
+fileInfo "UUID" "EE9407F4-4675-A36F-4EC7-4CBE1CD30599";
 createNode transform -s -n "persp";
 	rename -uid "5155A9BD-429C-90CC-3DE9-DCB98D8C04FD";
 	setAttr ".v" no;
@@ -3499,4 +3499,4 @@ connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "ChairMatte.msg" ":defaultShaderList1.s" -na;
 connectAttr "ChairMatte1.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of ChairRemodel.ma
+// End of Chair_UV.ma
