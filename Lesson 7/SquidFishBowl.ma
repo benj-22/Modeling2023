@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: SquidFishBowl.ma
-//Last modified: Fri, Oct 13, 2023 04:27:15 PM
+//Last modified: Fri, Oct 13, 2023 05:02:11 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "66E13F87-44D5-A36D-94FD-E4A558BE1070";
+fileInfo "UUID" "CEAFD26E-4098-7392-7D26-5E85DAAFF68F";
 createNode transform -s -n "persp";
 	rename -uid "62D22C07-45F8-8472-ABB3-62A74D37FB66";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.5667215058880686 23.70554260072387 64.798208505209658 ;
-	setAttr ".r" -type "double3" -5.7383527310833058 349.40000000012725 -2.022357500555633e-16 ;
+	setAttr ".t" -type "double3" -14.217092121932446 17.530232998762983 55.319499443628629 ;
+	setAttr ".r" -type "double3" -0.93835273108460437 347.80000000011336 6.3555553971915216e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "FF0BD7E1-4003-1168-CBF9-97979B289D55";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 54.623494527964489;
+	setAttr ".coi" 47.897550790756831;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
