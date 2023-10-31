@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: StarshipUV.ma
-//Last modified: Mon, Oct 30, 2023 11:53:36 PM
+//Last modified: Tue, Oct 31, 2023 12:15:41 AM
 //Codeset: 1252
 file -rdi 1 -ns "ccd_enterprise_sheet_4" -rfn "ccd_enterprise_sheet_4RN" -typ
 		 "image" "C:/Users/Benje/OneDrive/Pictures/School/ccd-enterprise-sheet-4.jpg";
@@ -16,18 +16,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "46426033-4D83-64F4-0BB1-22A1CFB71DAD";
+fileInfo "UUID" "6437CCDB-40F3-ADA9-BD83-BFBC11C00E0D";
 createNode transform -s -n "persp";
 	rename -uid "FDBE2DF4-4182-D304-4FFB-9EB247B69D85";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.186821687150289 11.154309478809632 21.07629489928663 ;
-	setAttr ".r" -type "double3" -13.199999999998401 -329.19999999993746 0 ;
+	setAttr ".t" -type "double3" 17.551340999778571 12.854812607512589 17.451306660110586 ;
+	setAttr ".r" -type "double3" -19.199999999998276 -334.79999999993584 0 ;
 	setAttr ".rpt" -type "double3" 5.0944614298542628e-16 -2.4412989755956304e-16 -8.1817620650008933e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "843BC55B-43B4-8CE2-9E2F-219AE694D155";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 26.923331273719405;
+	setAttr ".coi" 23.852443056195469;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
