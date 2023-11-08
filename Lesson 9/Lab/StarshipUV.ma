@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: StarshipUV.ma
-//Last modified: Tue, Oct 31, 2023 02:27:56 PM
+//Last modified: Thu, Nov 02, 2023 07:42:45 PM
 //Codeset: 1252
 file -rdi 1 -ns "ccd_enterprise_sheet_4" -rfn "ccd_enterprise_sheet_4RN" -typ
 		 "image" "C:/Users/Benje/OneDrive/Pictures/School/ccd-enterprise-sheet-4.jpg";
@@ -16,18 +16,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "8CBDA667-4BB4-62ED-D269-88A8A7D462D1";
+fileInfo "UUID" "6680523C-474E-93B3-58F5-10B0D405FDEB";
 createNode transform -s -n "persp";
 	rename -uid "FDBE2DF4-4182-D304-4FFB-9EB247B69D85";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 21.759700673003422 12.668935717108589 19.645254266633984 ;
+	setAttr ".t" -type "double3" 10.400752590536676 9.9981224795470212 8.6760456097796741 ;
 	setAttr ".r" -type "double3" -9.600000000000346 46.000000000000426 -5.723235364172576e-16 ;
 	setAttr ".rpt" -type "double3" 9.5792775078666213e-16 -4.8190404801852011e-16 -5.433975905111619e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "843BC55B-43B4-8CE2-9E2F-219AE694D155";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 27.508347036198437;
+	setAttr ".coi" 11.493276525966003;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -12152,7 +12152,7 @@ createNode mesh -n "RightEngine1Shape" -p "RightEngine1";
 createNode transform -n "WeirdSideEngineR1";
 	rename -uid "8634E05B-430A-3ADC-6421-59953510C784";
 	setAttr ".t" -type "double3" -0.032823368086376536 -3.0967870238106983 2.1611081281007145 ;
-	setAttr ".r" -type "double3" -184.75590181138051 0 0 ;
+	setAttr ".r" -type "double3" -184.75590181138054 0 0 ;
 	setAttr ".rp" -type "double3" -3.1837994538810834 10.569475131130186 -1.8100257331625313 ;
 	setAttr ".sp" -type "double3" -3.1837994538810834 10.569475131130186 -1.8100257331625313 ;
 createNode mesh -n "WeirdSideEngineR1Shape" -p "WeirdSideEngineR1";
@@ -12839,15 +12839,15 @@ createNode mesh -n "WeirdSideEngineR1Shape" -p "WeirdSideEngineR1";
 		161 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5A0D4EEE-4FED-7631-4EF3-2A835EE32A22";
+	rename -uid "9510C24F-49BB-1228-19AA-46B32B88E2DB";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "B30FFDB1-451A-CFF0-4659-48932ADE2D55";
+	rename -uid "52AACDD4-463B-0D10-E8EC-7FBA6DEAEF1D";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E5E89698-4C56-6659-972D-F5AB7AB0A9BF";
+	rename -uid "F5A9750C-4443-FA9D-C025-08A29D8CB7CD";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D61D02AE-4B17-3569-1AD5-D29C81022431";
+	rename -uid "5E565118-491E-E358-6F50-F4AC4E5EBDCF";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 4 ".dli";
@@ -12855,7 +12855,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "C342AFE6-4E68-89DE-642F-389EAB5D4BF8";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "3896B22B-4F81-955C-D50A-B0A3BB552C1D";
+	rename -uid "5F0B5E29-4D20-5DD8-38D2-BCB05915FD1A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "CB5D5F5E-4DA3-A6D4-A395-9B8ED4AD5165";
 	setAttr ".g" yes;
