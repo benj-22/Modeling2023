@@ -1,0 +1,17 @@
+Adobe After Effects v24.0.3 Windows 64 render log for project “v002.aep”
+
+Rendering started on 11/27/2023 at 9:27:42 PM
+
+  11/27/2023 9:27:42 PM: Starting composition “MainComp”.
+
+  Output To: C:\Users\Benje\Modeling2023\Lesson 11\MainComp.mp4    11/27/2023 9:27:56 PM: Finished composition “MainComp”.
+
+
+  11/27/2023 9:27:57 PM: Starting composition “Full Comp”.
+
+  Output To: C:\Users\Benje\Modeling2023\Lesson 11\v002.mp4    11/27/2023 9:28:05 PM: Finished composition “Full Comp”.
+
+
+  Total Time Elapsed: 23 Seconds
+Log closed on 11/27/2023 at 9:28:05 PM
+
